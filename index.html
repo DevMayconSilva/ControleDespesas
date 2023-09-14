@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Controle de Despesas</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Despesas</h1>
+    </header>
+    <main>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Nome da Despesa" required>
+            <input type="number" id="expense-amount" placeholder="Valor" required>
+            <select id="expense-category" required>
+                <option value="" disabled selected>Selecione uma categoria</option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="entretenimento">Entretenimento</option>
+                <option value="contas">Contas</option>
+                <!-- Adicione mais categorias conforme necessário -->
+            </select>
+            <button type="submit">Adicionar Despesa</button>
+        </form>
+        <div id="expense-list"></div>
+        <p id="total-display"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
